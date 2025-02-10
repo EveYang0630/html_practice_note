@@ -1,0 +1,106 @@
+<!-- HTML(HyperText Markup Language)，「超文字標示語言」 -->
+
+<!-- 標題(heading)
+    *可在起始標籤中添加屬性align="center"、"left"、"right"
+    *有h1~h6 -->
+    <h1>I am h1 title of this part</h1>
+    <h6>I am h6 title of this part</h6>
+
+<!-- 段落(paragraph)
+    *可在起始標籤中添加屬性align="center"、"left"、"right" -->
+    <p>I am the content of this paragraph. There are many words here but you can't see anything.</p>
+
+<!-- 換行(break)
+    *可以單獨寫，不需要結束標籤 -->
+    <br>
+    
+<!-- 水平分隔線(horizontal)
+    *可以單獨寫，不需要結束標籤 -->
+    <hr>
+    
+<!-- 預先格式化文字(preformatted text)
+    *要注意程式碼中此區塊的縮排要拿掉，否則瀏覽器會以為真的要縮排 -->
+<pre>
+哈囉！這邊     有五個空白。
+</pre>
+
+<!-- 字體
+    *可在起始標籤中添加屬性size="1"~"7"
+    *可在起始標籤中添加屬性color="blue"、"#0000FF"
+    *可在起始標籤中添加屬性face="Arial"、"微軟正黑體" -->
+    <p><font face="Arial" color="blue" size="4">自訂字型色彩大小</font></p>
+    
+<!-- 粗體(bold) -->
+    <p>我是<b>「粗體字」</b></p>
+    
+<!-- 斜體(italic) -->
+    <p>我是<i>「斜體字」</i></p>
+    
+<!-- 底線(underline) -->
+    <p>我是<u>「文字加底線」</u></p>
+    
+<!-- 刪除線(strike) -->
+    <p>我是<s>「文字加刪除線」</s></p>
+    
+<!-- 重點文字，粗體(strong)
+    *對 SEO 搜尋優化有用的粗體 -->
+    <p><strong>「重點文字，粗體」</strong></p>
+    
+<!-- 強調文字，斜體(emphasize)
+    *對 SEO 搜尋優化有用的斜體 -->
+    <p>我是<em>「強調文字，斜體」</em></p>
+    
+<!-- 上標文字或符號(superscript) -->
+    <p>數學 x 的 10 次方，是以 x<sup>10</sup> 來表示</p>
+    
+<!-- 下標文字或符號(subscript) -->
+    <p>水的化學式是 H<sub>2</sub>O</p>
+    
+<!-- 超連結(anchor)
+    *可在起始標籤中添加屬性href="//phd.com.tw"
+     p.s. href(hypertext reference)，譯為「超文字參考」
+     -> href的連結方式有以下幾種類型:
+            不同網站之間的連結。
+            同一個網站內，不同網頁之間的連結。
+            同一個網頁內，不同區域之間的連結。
+            開始一個新瀏覽器視窗的連結。
+            可以啟動電子郵件軟體並寫信給他人的連結。
+        說明：https://ithelp.ithome.com.tw/articles/10239524
+    *可在起始標籤中添加屬性target="_blank"、"_self"、"_parent"、"_top"
+    p.s. 只需要會用"_blank"就足夠了 -->
+    <p>這篇文章出自於 <a href="//phd.com.tw">博全科技</a> 的網站。</p>
+    <p>HTTP 網址是： <a href="//phd.com.tw/knowledge/html/hyperlink">HTML 超連結教學網頁</a></p>
+    <p>站內相對網址是： <a href="/knowledge/html/hyperlink">HTML 超連結教學網頁</a></p>
+    <p>E-mail 信箱是： <a href="mailto:service@phd.com.tw">博全科技信箱</a></p>
+    
+<!-- ()
+    * -->
+    
+    
+<!-- ()
+    * -->
+    
+    
+<!-- ()
+    * -->
+    
+    
+<!-- 這段有屬性(attribute)：圖片(img)、替代文字(alt)、高度(height)和寬度(width) -->
+<img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" alt="Firefox icon" width="100" height="100" />
+
+<!-- 這段有布林屬性(Boolean attributes)的判斷 -->
+<!-- 有些屬性沒有值，為布林屬性，例如disabled(可以讓使用者無法在input box輸入內容。)，或是給他跟屬性名稱一樣的值，布林值都會判斷為true，其餘則false，true則會執行。 -->
+<!-- 只有第三行允許輸入 -->
+<input type="text" disabled="disabled">
+<input type="text" disabled />
+<input type="text" />
+
+<!-- 標籤a的功能是錨點，屬性href可以不加""/''，但有其他屬性在時最好都要加 -->
+<a href=https://www.example.com>A link to my example.</a>
+<a href='https://www.example.com'>A link to my example.</a>
+<a href="https://www.example.com">A link to my example.</a>
+<a href='https://www.mozilla.org/' title='The Mozilla homepage'>favorite website</a>
+
+<!-- 如果要在""裡面使用""，會造成錯誤，應該將裡面的""改用命名參考(Named reference) -->
+進入下述網址來查詢參考
+https://developer.mozilla.org/en-US/docs/Glossary/Character_reference
