@@ -30,24 +30,27 @@
     *可在起始標籤中添加屬性face="Arial"、"微軟正黑體" -->
     <p><font face="Arial" color="blue" size="4">自訂字型色彩大小</font></p>
     
-<!-- 粗體(bold) -->
+<!-- 粗體(bold)
+    *用來傳達傳統上用粗體傳達的意思：關鍵字、產品名稱、引導句 -->
     <p>我是<b>「粗體字」</b></p>
     
-<!-- 斜體(italic) -->
+<!-- 斜體(italic)
+    *用來傳達傳統上用斜體傳達的意思：外來語、分類名稱、技術術語、想法 -->
     <p>我是<i>「斜體字」</i></p>
     
-<!-- 底線(underline) -->
+<!-- 底線(underline)
+    *用來傳達傳統上用底線傳達的意思：專有名詞、拼字錯誤 -->
     <p>我是<u>「文字加底線」</u></p>
     
 <!-- 刪除線(strike) -->
     <p>我是<s>「文字加刪除線」</s></p>
     
 <!-- 重點文字，粗體(strong)
-    *對 SEO 搜尋優化有用的粗體 -->
+    *這些內容還可以被螢幕閱讀器識別，並可配置為以不同的語調朗讀，對 SEO 搜尋優化有用的粗體 -->
     <p><strong>「重點文字，粗體」</strong></p>
     
 <!-- 強調文字，斜體(emphasize)
-    *對 SEO 搜尋優化有用的斜體 -->
+    *這些內容還可以被螢幕閱讀器識別，並可配置為以不同的語調朗讀，對 SEO 搜尋優化有用的斜體 -->
     <p>我是<em>「強調文字，斜體」</em></p>
     
 <!-- 上標文字或符號(superscript) -->
@@ -55,7 +58,76 @@
     
 <!-- 下標文字或符號(subscript) -->
     <p>水的化學式是 H<sub>2</sub>O</p>
+
+<!-- 無序列表(Unordered lists) -->
+    <p>這是一份無序清單範例</p>    
+    <ul>
+        <li>milk</li>
+        <li>eggs</li>
+        <li>bread</li>
+        <li>hummus</li>
+    </ul>
+
+<!-- 有序列表(ordered lists) -->
+    <p>這是一份有序清單範例</p>
+    <ol>
+        <li>milk</li>
+        <li>eggs</li>
+        <li>bread</li>
+        <li>hummus</li>
+    </ol>
     
+<!-- 多層次清單(Nesting lists) -->
+    <p>這是一份多層次清單範例</p>
+    <ol>
+        <li>Remove the skin from the garlic, and chop coarsely.</li>
+        <li>Remove all the seeds and stalk from the pepper, and chop coarsely.</li>
+        <li>Add all the ingredients into a food processor.</li>
+        <li>
+        Process all the ingredients into a paste.
+        <ul>
+            <li>
+            If you want a coarse "chunky" hummus, process it for a short time.
+            </li>
+            <li>If you want a smooth hummus, process it for a longer time.</li>
+        </ul>
+        </li>
+    </ol>
+
+<!-- 定義清單(Description lists)
+    *用來表示術語(description term):<dt> 和 定義(description definition):<dd> -->
+    <p>這是一份多層次清單範例</p>
+    <dl>
+        <dt>soliloquy</dt>
+        <dd>
+        In drama, where a character speaks to themselves, representing their inner
+        thoughts or feelings and in the process relaying them to the audience (but
+        not to other characters.)
+        </dd>
+        <dt>monologue</dt>
+        <dd>
+        In drama, where a character speaks their thoughts out loud to share them
+        with the audience and any other characters present.
+        </dd>
+        <dt>aside</dt>
+        <dd>
+        In drama, where a character shares a comment only with the audience for
+        humorous or dramatic effect. This is usually a feeling, thought, or piece of
+        additional background information.
+        </dd>
+        <dt>aside</dt>
+        <dd>
+        In drama, where a character shares a comment only with the audience for
+        humorous or dramatic effect. This is usually a feeling, thought, or piece of
+        additional background information.
+        </dd>
+        <dd>
+        In writing, a section of content that is related to the current topic, but
+        doesn't fit directly into the main flow of content so is presented nearby
+        often in a box off to the side.)
+        </dd>
+    </dl>
+
 <!-- 超連結(anchor)
     *可在起始標籤中添加屬性href="//phd.com.tw"
      p.s. href(hypertext reference)，譯為「超文字參考」
@@ -72,21 +144,12 @@
     <p>HTTP 網址是： <a href="//phd.com.tw/knowledge/html/hyperlink">HTML 超連結教學網頁</a></p>
     <p>站內相對網址是： <a href="/knowledge/html/hyperlink">HTML 超連結教學網頁</a></p>
     <p>E-mail 信箱是： <a href="mailto:service@phd.com.tw">博全科技信箱</a></p>
-    
-<!-- ()
-    * -->
-    
-    
-<!-- ()
-    * -->
-    
-    
-<!-- ()
-    * -->
-    
-    
+    <!-- *屬性href可以不加""/''，但有其他屬性在時最好都要加 -->
+    <a href=https://www.example.com>A link to my example.</a><br>
+    <a href='https://www.mozilla.org/' title='The Mozilla homepage'>favorite website</a><br>
+   
 <!-- 這段有屬性(attribute)：圖片(img)、替代文字(alt)、高度(height)和寬度(width) -->
-<img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" alt="Firefox icon" width="100" height="100" />
+<img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" alt="Firefox icon" width="100" height="100" /><br>
 
 <!-- 這段有布林屬性(Boolean attributes)的判斷 -->
 <!-- 有些屬性沒有值，為布林屬性，例如disabled(可以讓使用者無法在input box輸入內容。)，或是給他跟屬性名稱一樣的值，布林值都會判斷為true，其餘則false，true則會執行。 -->
@@ -94,13 +157,9 @@
 <input type="text" disabled="disabled">
 <input type="text" disabled />
 <input type="text" />
+<br>
 
-<!-- 標籤a的功能是錨點，屬性href可以不加""/''，但有其他屬性在時最好都要加 -->
-<a href=https://www.example.com>A link to my example.</a>
-<a href='https://www.example.com'>A link to my example.</a>
-<a href="https://www.example.com">A link to my example.</a>
-<a href='https://www.mozilla.org/' title='The Mozilla homepage'>favorite website</a>
-
-<!-- 如果要在""裡面使用""，會造成錯誤，應該將裡面的""改用命名參考(Named reference) -->
+<!-- 如果要在""裡面使用雙引號，會造成錯誤，應該將裡面的""改用命名參考(Named reference)
 進入下述網址來查詢參考
 https://developer.mozilla.org/en-US/docs/Glossary/Character_reference
+ -->
