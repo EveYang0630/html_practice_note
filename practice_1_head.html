@@ -1,7 +1,50 @@
 <!-- HTML(HyperText Markup Language)，「超文字標示語言」 -->
+<!DOCTYPE html>
+<!-- 設定網站語系 -->
+<html lang="en-US">
 
-<!-- 標題(heading1) -->
-<title>網頁設計教學 HTML - 水平分隔線</title>
+<!--<head>區塊可包含下列元素：
+    <title>
+    <base>
+    <link>
+    <style>
+    <meta>
+    <script>
+    <noscript>
+    <template>
+ 參考資料：https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head
+ -->
+<head>
 
-<!-- XX(XXX) -->
-    
+<!-- 網站標題(title) -->
+    <title>網頁設計教學 HTML</title>
+
+<!-- 指定文檔的字元編碼使用utf-8字元集 -->
+    <meta charset="utf-8" />
+
+<!-- 指定指定元素類型和內容(優化SEO) -->
+    <meta name="author" content="Chris Mills" />
+    <meta name="description" content="This is a page for practice head." />
+    <meta name="viewport" content="width=device-width">
+
+<!-- Open Graph Data(https://ogp.me/)是 Facebook 發明的元資料協議，使用該協議的屬性值，可以讓fb引用該網站時，秀出圖像、標題和描述。 -->
+    <meta
+    property="og:image"
+    content="https://developer.mozilla.org/mdn-social-share.png" />
+    <meta
+    property="og:description"
+    content="The Mozilla Developer Network (MDN) provides information about Open Web technologies including HTML, CSS, and APIs for both websites and HTML Apps." />
+    <meta
+    property="og:title"
+    content="Mozilla Developer Network" />
+
+<!-- 我的最愛圖示(favicon) -->
+    <link rel="icon" href="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" type="image/x-icon" />
+
+<!-- 運用CSS 和 JavaScript 於 HTML -->
+    <link rel="stylesheet" href="my-css-file.css" />
+    <script src="my-js-file.js" defer></script>
+
+</head>
+<body>學習用</body>
+</html>
