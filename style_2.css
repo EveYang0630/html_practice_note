@@ -128,6 +128,18 @@ aside li {
   padding-bottom: 10px;
 }
 
+.shopping-cart {
+  width: 300px; /* 設定固定寬度 */
+  position: fixed; /* 固定位置 */
+  bottom: 0; /* 距離底部0 */
+  right: 0; /* 距離右邊0 */
+  margin: 0; /* 移除外邊距 */
+  background-color: white; /* 設定背景顏色 */
+  border: 1px solid #ccc; /* 設定邊框 */
+  padding: 10px; /* 設定內邊距 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 設定陰影 */
+}
+
 footer {
   margin-top: 10px;
 }
