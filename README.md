@@ -1,2 +1,2 @@
 # html_practice_note
-This document is builded for learnig
+This documents were established for learnig
