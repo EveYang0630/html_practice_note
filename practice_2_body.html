@@ -1,13 +1,24 @@
-<!-- 這段有布林屬性(Boolean attributes)的判斷 -->
-<!-- 有些屬性沒有值，為布林屬性，例如disabled(可以讓使用者無法在input box輸入內容。)，或是給他跟屬性名稱一樣的值，布林值都會判斷為true，其餘則false，true則會執行。 -->
-<!-- 只有第三行允許輸入 -->
+<!-- 屬性：停用(disabled)
+    有些屬性沒有值，稱為布林屬性(Boolean attributes) *或是給他跟屬性名稱一樣的值，布林值都會判斷為true，其餘則false，true則會執行。
+    以下範例：只有第三行允許輸入 -->
 <input type="text" disabled="disabled">
-<input type="text" disabled />
-<input type="text" />
+<input type="text" disabled>
+<input type="text">
 <br>
 
-<!-- A Search form: another common non-linear way to navigate through a site. -->
+<!-- 常見的搜尋工具(Search form) -->
 <form>
   <input type="search" name="q" placeholder="Search query" />
   <input type="submit" value="Go!" />
 </form>
+
+<!-- 超連結(anchor)
+     -> href的連結方式有以下幾種類型:
+            不同網站之間的連結。
+            同一個網站內，不同網頁之間的連結。
+            同一個網頁內，不同區域之間的連結。
+            開始一個新瀏覽器視窗的連結。
+            可以啟動電子郵件軟體並寫信給他人的連結。
+        說明：https://ithelp.ithome.com.tw/articles/10239524
+    *可在起始標籤中添加屬性target="_blank"、"_self"、"_parent"、"_top"
+    p.s. 只需要會用"_blank"就足夠了 -->
