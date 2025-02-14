@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>練習HTML語法-body-2</title>
+  <link href="minimal-table.css" rel="stylesheet">
 </head>
 <body>
   <!-- 超連結(anchor) -->
@@ -52,25 +53,88 @@
     </video>
     <br><br><br><hr>
     
-  <h2 id="section1">標題1</h2><br><br><br><hr>
-
-  <!-- 布林屬性：停用(disabled)
-    有些屬性沒有值，稱為布林屬性(Boolean attributes) *或是給他跟屬性名稱一樣的值，布林值都會判斷為true，其餘則false，true則會執行。
-    以下範例：只有第三行允許輸入 -->
-    <h3>布林屬性，例如：停用(disabled)</h3>
-    <input type="text" disabled="disabled">
-    <input type="text" disabled>
-    <input type="text">
-    <br><br>
-  
-  <!-- 常見的搜尋工具(Search form) -->
-    <h3>搜尋工具(Search form)</h3>
-    <form>
-      <input type="search" name="q" placeholder="Search query" />
-      <input type="submit" value="Go!" />
-    </form>
-    
+  <h2 id="section1">標題1</h2>
   <br><br><br><hr>
+
+  <!-- 建立表格 -->
+    <h3>建立表格</h3>
+    <table>
+      <colgroup>
+        <col span="2" style="background-color: rgb(187, 148, 148);">
+        <col span="1" style="background-color: rgb(159, 159, 216);">
+      </colgroup>
+      <colgroup span="2" style="background-color: rgb(223, 223, 110); border:4px solid #a12b5f"></colgroup>
+      <tr>
+        <th>&nbsp;</th>
+        <th>Knocky</th>
+        <th>Flor</th>
+        <th>Ella</th>
+        <th>Juan</th>
+      </tr>
+      <tr>
+        <th>Breed</th>
+        <td>Jack Russell</td>
+        <td>Poodle</td>
+        <td>Streetdog</td>
+        <td>Cocker Spaniel</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>16</td>
+        <td>9</td>
+        <td>10</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th>Owner</th>
+        <td>Mother-in-law</td>
+        <td>Me</td>
+        <td>Me</td>
+        <td>Sister-in-law</td>
+      </tr>
+      <tr>
+        <th>Eating Habits</th>
+        <td>Eats everyone's leftovers</td>
+        <td>Nibbles at food</td>
+        <td>Hearty eater</td>
+        <td>Will eat till he explodes</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <h3>建立表格</h3>
+    <table>
+      <caption>
+        合併欄位範例
+      </caption>
+      <tr>
+        <th colspan="2">Animals</th>
+      </tr>
+      <tr>
+        <th colspan="2">Hippopotamus</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Horse</th>
+        <td>Mare</td>
+      </tr>
+      <tr>
+        <td>Stallion</td>
+      </tr>
+      <tr>
+        <th colspan="2">Crocodile</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Chicken</th>
+        <td>Hen</td>
+      </tr>
+      <tr>
+        <td>Rooster</td>
+      </tr>
+    </table>
+
+
+
   
 </body>
 </html>
