@@ -1,33 +1,76 @@
-<!-- 屬性：停用(disabled)
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>練習HTML語法-body-2</title>
+</head>
+<body>
+  <!-- 超連結(anchor) -->
+    <h3>不同類型的超連結</h3>
+    <!-- *屬性href連結到不同網站之間的連結。 -->
+      <a href="http://www.google.com">連到Google</a><br>
+    <!-- *屬性href連結到同一個網站內，不同網頁之間的連結。 -->
+      <a href="practice_1_full_page.html">連到另一個同目錄下的網頁</a><br>
+    <!-- *屬性href連結到同一個網頁內，不同區域之間的連結。 -->
+      <a href="#section1">連到下面的標題1</a><br>
+    <!-- *屬性href連結啟動電子郵件軟體並寫信給他人。 -->
+      <a href="mailto:eve.yang@gmail.com">寄信給我</a><br>
+    <!-- *屬性href連結到開始一個新瀏覽器視窗的連結。 -->
+      <a href="http://www.google.com" target="_blank">另開分頁到Google</a><br>
+    <!-- *屬性href下載檔案+屬性download提供預設的儲存檔案名稱 -->
+      <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+        download="firefox-latest-64bit-installer.exe">
+        下載 Latest Firefox for Windows (64-bit) (English, US)
+      </a><br><br><br><hr>
+
+  <!-- 引用區塊(figure) -->
+    <h3>引用區塊(figure)</h3>
+    <figure>
+      <img
+        src="media/poster.png"
+        alt="這裡有一張圖片"
+        width="350"
+        height="300">  
+      <figcaption>
+        測試用圖片(Source: MDN)
+      </figcaption>
+    </figure><br><br><hr>
+  <!-- 嵌入影片(並運用source元素) -->
+    <h3>嵌入影片</h3>
+    <video controls 
+    width="400"
+    height="400"
+    autoplay
+    loop
+    muted
+    preload="auto"
+    poster="media/poster.png">
+      <source src="media/rabbit320.webm" type="video/webm">
+      <source src="media/rabbit320.mp4" type="video/mp4">
+    瀏覽器不支援HTML video，請點擊 <a href="media/rabbit320.mp4">link</a>。
+    </video>
+    <br><br><br><hr>
+    
+  <h2 id="section1">標題1</h2><br><br><br><hr>
+
+  <!-- 布林屬性：停用(disabled)
     有些屬性沒有值，稱為布林屬性(Boolean attributes) *或是給他跟屬性名稱一樣的值，布林值都會判斷為true，其餘則false，true則會執行。
     以下範例：只有第三行允許輸入 -->
-<input type="text" disabled="disabled">
-<input type="text" disabled>
-<input type="text">
-<br>
-
-<!-- 常見的搜尋工具(Search form) -->
-<form>
-  <input type="search" name="q" placeholder="Search query" />
-  <input type="submit" value="Go!" />
-</form>
-
-<!-- 超連結(anchor) -->
-  <!-- *屬性href連結到不同網站之間的連結。 -->
-    <a href="http://www.google.com">Google</a>
-  <!-- *屬性href連結到同一個網站內，不同網頁之間的連結。 -->
-    <a href="page2.html">Page 2</a>
-  <!-- *屬性href連結到同一個網頁內，不同區域之間的連結。 -->
-    <a href="#section1">To Section 1</a>
-  <!-- *屬性href連結啟動電子郵件軟體並寫信給他人。 -->
-    <a href="mailto:eve.yang@gmail.com">寄信給我</a>
-  <!-- *屬性href連結到開始一個新瀏覽器視窗的連結。 -->
-    <a href="http://www.google.com" target="_blank">Google</a>
-  <!-- *屬性href下載檔案+屬性download提供預設的儲存檔案名稱 -->
-    <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
-      download="firefox-latest-64bit-installer.exe">
-      Download Latest Firefox for Windows (64-bit) (English, US)
-    </a>
-
-  <br>
-  <h2 id="section1">標題1</h2>
+    <h3>布林屬性，例如：停用(disabled)</h3>
+    <input type="text" disabled="disabled">
+    <input type="text" disabled>
+    <input type="text">
+    <br><br>
+  
+  <!-- 常見的搜尋工具(Search form) -->
+    <h3>搜尋工具(Search form)</h3>
+    <form>
+      <input type="search" name="q" placeholder="Search query" />
+      <input type="submit" value="Go!" />
+    </form>
+    
+  <br><br><br><hr>
+  
+</body>
+</html>
